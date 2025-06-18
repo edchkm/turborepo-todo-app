@@ -1,5 +1,5 @@
 {
-  "name": "-apps-vue-todo",
+  "name": "vue-todo",
   "version": "0.0.0",
   "private": true,
   "type": "module",
