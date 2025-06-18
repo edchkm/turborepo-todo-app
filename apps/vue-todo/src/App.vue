@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <my-card class="container">
     <header>
       <h1>Todo List</h1>
     </header>
@@ -17,10 +17,11 @@
         @delete-todo="handleDeleteTodo"
       />
     </main>
-  </div>
+  </my-card>
 </template>
 
 <script setup>
+import { MyCard } from "@repo/vue-ui";
 import { ref, onMounted } from "vue";
 import TodoForm from "./components/TodoForm.vue";
 import TodoList from "./components/TodoList.vue";
@@ -65,11 +66,6 @@ onMounted(fetchTodos);
 .container {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  padding: 2rem;
 }
 
 header {

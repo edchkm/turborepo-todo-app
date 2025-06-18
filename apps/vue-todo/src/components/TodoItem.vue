@@ -3,13 +3,14 @@
     <p class="title" @click="toggle">
       {{ todo.title }}
     </p>
-    <p class="created-at">{{ createdAt(todo.createdAt) }}</p>
+    <p class="created-at">{{ formatDate(todo.createdAt) }}</p>
     <button @click="remove" class="delete-btn">&times;</button>
   </li>
 </template>
 
 <script setup>
-// Define props and emits
+import { formatDate } from "@repo/date-utils";
+
 const props = defineProps({
   todo: {
     type: Object,
@@ -17,10 +18,6 @@ const props = defineProps({
   },
 });
 const emit = defineEmits(["toggle-todo", "delete-todo"]);
-
-const createdAt = (createdAt) => {
-  return new Date(createdAt).toLocaleString();
-};
 
 const API_URL = "/api/todos";
 
