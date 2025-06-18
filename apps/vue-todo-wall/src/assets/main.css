@@ -1,0 +1,34 @@
+:root {
+    --background-color: #f4f7f9;
+    --container-bg: #ffffff;
+    --primary-text: #2c3e50;
+    --secondary-text: #8295a7;
+    --accent-color: #42b983; /* Vue's green */
+    --accent-hover: #369b71;
+    --danger-color: #e74c3c;
+    --danger-hover: #c0392b;
+    --border-color: #e1e8ed;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  body {
+    font-family: 'Inter',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-text);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  #app {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-weight: normal;
+  }
+  
